@@ -21,27 +21,10 @@ import java.awt.event.ActionEvent;
 
 public class JFCrud extends JFrame {
 
-	
-
 	/**
-	 * Launch the application.
+	 * 
 	 */
-	/*public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					JFCrud frame = new JFCrud();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
-
-	/**
-	 * Create the frame.
-	 */
+	private static final long serialVersionUID = 1L;
 	public JFCrud() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 556, 348);
@@ -49,7 +32,7 @@ public class JFCrud extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
-		setVisible(true);
+		
 		
 		JLabel lblCodigo = new JLabel("Codigo");
 		lblCodigo.setBounds(10, 30, 66, 14);

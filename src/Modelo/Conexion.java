@@ -11,9 +11,10 @@ public class Conexion {
 	public Connection getConexion() {
 		Connection miConexion=null;
 		try {
-			miConexion=DriverManager.getConnection("jdbc:mysql://localhost:3305/salvadora","root","2301");
+			Class.forName("com.mysql.jdbc.Driver");
+			miConexion=DriverManager.getConnection("jdbc:mysql://localhost:3305/materias_primas","root","2301");
 	
-		}catch (SQLException e) {
+		}catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}

@@ -53,8 +53,8 @@ public class ControladorCRUD implements ActionListener {
 		
 	}
 	public void Llenartabla(JTable tablaMarco) {
-		DefaultTableModel modeloT=new DefaultTableModel();
-		tablaMarco.setModel(modeloT);
+		//DefaultTableModel modeloT=new DefaultTableModel();
+		//tablaMarco.setModel(modeloT);
 		
 		Object[] columna=new Object[5];
 		
@@ -69,7 +69,7 @@ public class ControladorCRUD implements ActionListener {
 			columna[4]=modeloCRUD.listaMP().get(i).getConcentracion();
 			columna[5]=modeloCRUD.listaMP().get(i).getStock();
 			
-			modeloT.addRow(columna);
+			//modeloT.addRow(columna);
 			
 		}
 		
